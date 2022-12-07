@@ -192,3 +192,69 @@ body {
     max-width: 6.25rem;
     margin-right: 24px;
 }
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topics-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .more-info-button {
+        margin-top: 30px;
+    }
+
+    .news-feed-item p {
+        padding-bottom: 32px;
+    }
+
+    .news-feed-item h3 {
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        width: 90%;
+        padding-top: 70px;
+    }
+
+    .news-feed {
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 50px;
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        display: none;
+    }
+
+    .menu menu a {
+        padding: 8px 0;
+        margin-left: 0;
+    }
+
+    .hamburger {
+        display: initial;
+        margin-left: auto;
+        margin-bottom: 10px;
+        width: 30px;
+        height: 25px;
+    }
+}
