@@ -35,6 +35,10 @@ body {
     margin-bottom: 60px; 
 }
 
+.menu-btn {
+    display: none;
+}
+
 .main-photo {
     grid-column: span 2;
     grid-area: mainPhoto;
@@ -246,7 +250,7 @@ body {
     }
 
     .menu menu a {
-        padding: 8px 0;
+        padding: 15px 5px;
         margin-left: 0;
     }
 
@@ -256,5 +260,23 @@ body {
         margin-bottom: 10px;
         width: 30px;
         height: 25px;
+    }
+
+    .menu-btn {
+        display: flex;
+        position: absolute;
+        opacity: 90%;
+        right: 0;
+        transform: translate(-10px, -5px);
+    }
+
+    .menu-btn::after {
+        content: url(https://news-homepage-ten.vercel.app/images/burger-menu.svg);
+        z-index: 30;
+        transform: translate(-20px, -20px);
+    }
+
+    .menu-btn:checked ~ menu {
+        display: flex;
     }
 }
