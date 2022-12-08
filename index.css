@@ -119,14 +119,14 @@ body {
 /** end of news feed styles **/
 
 /** menu styles **/
-.menu a {
+.nav-link {
     margin-left: 30px;
     text-decoration: underline;
     padding-bottom: 1px;
     color: gray;
 }
 
-.menu a:hover {
+.nav-link:hover {
     color: var(--primary-orange);
 }
 
@@ -136,7 +136,7 @@ body {
     align-items: flex-end;
 }
 
-.menu menu {
+.navigation {
     margin-left: auto;
 }
 /** end of menu styles **/
@@ -237,7 +237,7 @@ body {
         position: relative;
     }
 
-    .menu menu {
+    .navigation {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -249,7 +249,7 @@ body {
         display: none;
     }
 
-    .menu menu a {
+    .nav-link {
         padding: 15px 5px;
         margin-left: 0;
     }
@@ -276,7 +276,7 @@ body {
         transform: translate(-20px, -20px);
     }
 
-    .menu-btn:checked ~ menu {
+    .menu-btn:checked ~ .navigation {
         display: flex;
     }
 }
